@@ -5,7 +5,7 @@ use egui_winit::winit;
 #[cfg(target_os = "android")]
 #[no_mangle]
 fn android_main(app: winit::platform::android::activity::AndroidApp) {
-    use eframe::Renderer;
+    //use eframe::Renderer;
 
     std::env::set_var("RUST_BACKTRACE", "full");
     android_logger::init_once(
@@ -14,7 +14,7 @@ fn android_main(app: winit::platform::android::activity::AndroidApp) {
 
     let options = NativeOptions {
         android_app: Some(app),
-        renderer: Renderer::Wgpu,
+        //renderer: Renderer::Wgpu,
         ..Default::default()
     };
     DemoApp::run(options).unwrap();

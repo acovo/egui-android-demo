@@ -30,7 +30,7 @@ default-features = false
 version = "0.32"
 default-features = false
 features = [
-    "wgpu",
+    "glow",
     "android-native-activity",
     "default_fonts",
 ]
